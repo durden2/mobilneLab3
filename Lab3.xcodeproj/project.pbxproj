@@ -14,6 +14,8 @@
 		90F734B71DD4BD5400CDCC08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F734B51DD4BD5400CDCC08 /* LaunchScreen.storyboard */; };
 		90F734C21DD4BD5400CDCC08 /* Lab3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734C11DD4BD5400CDCC08 /* Lab3Tests.swift */; };
 		90F734CD1DD4BD5400CDCC08 /* Lab3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734CC1DD4BD5400CDCC08 /* Lab3UITests.swift */; };
+		90F734DB1DD4BE6800CDCC08 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734DA1DD4BE6800CDCC08 /* ArtistsView.swift */; };
+		90F734DF1DD508AD00CDCC08 /* AlbumsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734DE1DD508AD00CDCC08 /* AlbumsTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		90F734C81DD4BD5400CDCC08 /* Lab3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F734CC1DD4BD5400CDCC08 /* Lab3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3UITests.swift; sourceTree = "<group>"; };
 		90F734CE1DD4BD5400CDCC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F734DA1DD4BE6800CDCC08 /* ArtistsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
+		90F734DE1DD508AD00CDCC08 /* AlbumsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				90F734AC1DD4BD5400CDCC08 /* AppDelegate.swift */,
 				90F734AE1DD4BD5400CDCC08 /* ViewController.swift */,
+				90F734DE1DD508AD00CDCC08 /* AlbumsTableCell.swift */,
 				90F734B01DD4BD5400CDCC08 /* Main.storyboard */,
+				90F734DA1DD4BE6800CDCC08 /* ArtistsView.swift */,
 				90F734B31DD4BD5400CDCC08 /* Assets.xcassets */,
 				90F734B51DD4BD5400CDCC08 /* LaunchScreen.storyboard */,
 				90F734B81DD4BD5400CDCC08 /* Info.plist */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F734DF1DD508AD00CDCC08 /* AlbumsTableCell.swift in Sources */,
+				90F734DB1DD4BE6800CDCC08 /* ArtistsView.swift in Sources */,
 				90F734AF1DD4BD5400CDCC08 /* ViewController.swift in Sources */,
 				90F734AD1DD4BD5400CDCC08 /* AppDelegate.swift in Sources */,
 			);
