@@ -14,6 +14,7 @@ class AlbumsTableCell: UITableViewCell {
     @IBOutlet weak var musicInfo: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         artistLabel.text = "Dupa";
         // Initialization code
     }
