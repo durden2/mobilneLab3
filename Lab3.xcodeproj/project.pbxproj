@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901E63E81DD603E000804E2E /* altj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 901E63E71DD603E000804E2E /* altj.jpg */; };
+		901E63EA1DD60CBB00804E2E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E63E91DD60CBB00804E2E /* Album.swift */; };
 		90F734AD1DD4BD5400CDCC08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734AC1DD4BD5400CDCC08 /* AppDelegate.swift */; };
 		90F734AF1DD4BD5400CDCC08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734AE1DD4BD5400CDCC08 /* ViewController.swift */; };
 		90F734B21DD4BD5400CDCC08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F734B01DD4BD5400CDCC08 /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		90F734CD1DD4BD5400CDCC08 /* Lab3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734CC1DD4BD5400CDCC08 /* Lab3UITests.swift */; };
 		90F734DB1DD4BE6800CDCC08 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734DA1DD4BE6800CDCC08 /* ArtistsView.swift */; };
 		90F734DF1DD508AD00CDCC08 /* AlbumsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734DE1DD508AD00CDCC08 /* AlbumsTableCell.swift */; };
+		90F734E11DD514AB00CDCC08 /* LoadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F734E01DD514AB00CDCC08 /* LoadDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901E63E71DD603E000804E2E /* altj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = altj.jpg; path = ../altj.jpg; sourceTree = "<group>"; };
+		901E63E91DD60CBB00804E2E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		90F734A91DD4BD5400CDCC08 /* Lab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F734AC1DD4BD5400CDCC08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90F734AE1DD4BD5400CDCC08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		90F734CE1DD4BD5400CDCC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F734DA1DD4BE6800CDCC08 /* ArtistsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 		90F734DE1DD508AD00CDCC08 /* AlbumsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableCell.swift; sourceTree = "<group>"; };
+		90F734E01DD514AB00CDCC08 /* LoadDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		90F734A01DD4BD5400CDCC08 = {
 			isa = PBXGroup;
 			children = (
+				901E63E71DD603E000804E2E /* altj.jpg */,
 				90F734AB1DD4BD5400CDCC08 /* Lab3 */,
 				90F734C01DD4BD5400CDCC08 /* Lab3Tests */,
 				90F734CB1DD4BD5400CDCC08 /* Lab3UITests */,
@@ -108,7 +115,9 @@
 				90F734DA1DD4BE6800CDCC08 /* ArtistsView.swift */,
 				90F734B31DD4BD5400CDCC08 /* Assets.xcassets */,
 				90F734B51DD4BD5400CDCC08 /* LaunchScreen.storyboard */,
+				90F734E01DD514AB00CDCC08 /* LoadDataViewController.swift */,
 				90F734B81DD4BD5400CDCC08 /* Info.plist */,
+				901E63E91DD60CBB00804E2E /* Album.swift */,
 			);
 			path = Lab3;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F734B71DD4BD5400CDCC08 /* LaunchScreen.storyboard in Resources */,
+				901E63E81DD603E000804E2E /* altj.jpg in Resources */,
 				90F734B41DD4BD5400CDCC08 /* Assets.xcassets in Resources */,
 				90F734B21DD4BD5400CDCC08 /* Main.storyboard in Resources */,
 			);
@@ -268,7 +278,9 @@
 				90F734DF1DD508AD00CDCC08 /* AlbumsTableCell.swift in Sources */,
 				90F734DB1DD4BE6800CDCC08 /* ArtistsView.swift in Sources */,
 				90F734AF1DD4BD5400CDCC08 /* ViewController.swift in Sources */,
+				90F734E11DD514AB00CDCC08 /* LoadDataViewController.swift in Sources */,
 				90F734AD1DD4BD5400CDCC08 /* AppDelegate.swift in Sources */,
+				901E63EA1DD60CBB00804E2E /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +523,7 @@
 				90F734D31DD4BD5400CDCC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90F734D41DD4BD5400CDCC08 /* Build configuration list for PBXNativeTarget "Lab3Tests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +532,7 @@
 				90F734D61DD4BD5400CDCC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90F734D71DD4BD5400CDCC08 /* Build configuration list for PBXNativeTarget "Lab3UITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +541,7 @@
 				90F734D91DD4BD5400CDCC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

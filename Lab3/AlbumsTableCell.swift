@@ -12,10 +12,9 @@ class AlbumsTableCell: UITableViewCell {
 
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var musicInfo: UIView!
+    @IBOutlet weak var albumImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        artistLabel.text = "Dupa";
         // Initialization code
     }
 

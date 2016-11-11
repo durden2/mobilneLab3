@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gy0-rk-yU7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OyV-Mm-MeT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -10,28 +10,31 @@
         <!--Albums View-->
         <scene sceneID="Je4-uI-XXD">
             <objects>
-                <tableViewController id="OyV-Mm-MeT" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TUu-Dc-Sya">
+                <tableViewController id="OyV-Mm-MeT" customClass="LoadDataViewController" customModule="Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="TUu-Dc-Sya">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FYl-OS-iZy">
-                            <rect key="frame" x="0.0" y="136" width="375" height="533"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fMA-73-Omy" customClass="AlbumsTableCell" customModule="Lab3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AlbumsTableCell" selectionStyle="none" indentationWidth="10" rowHeight="90" id="fMA-73-Omy" customClass="AlbumsTableCell" customModule="Lab3">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fMA-73-Omy" id="xN8-z4-ssm">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hq-zo-AQk">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="artistLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hq-zo-AQk">
+                                            <accessibility key="accessibilityConfiguration" label="artistLabel">
+                                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                            </accessibility>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="altj.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-5a-pIF">
+                                            <frame key="frameInset" minX="8" minY="8" width="68" height="68"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9I-B2-GUc">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -39,13 +42,15 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="4Hq-zo-AQk" firstAttribute="leading" secondItem="xN8-z4-ssm" secondAttribute="leadingMargin" constant="16" id="BzD-gf-tzy"/>
-                                        <constraint firstItem="4Hq-zo-AQk" firstAttribute="top" secondItem="xN8-z4-ssm" secondAttribute="topMargin" constant="3" id="IwB-Gv-1wF"/>
-                                        <constraint firstItem="d9I-B2-GUc" firstAttribute="top" secondItem="xN8-z4-ssm" secondAttribute="topMargin" constant="3" id="eLW-v5-VPj"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="d9I-B2-GUc" secondAttribute="trailing" constant="27" id="lGu-OV-WyO"/>
+                                        <constraint firstItem="4Hq-zo-AQk" firstAttribute="leading" secondItem="xN8-z4-ssm" secondAttribute="leadingMargin" constant="139" id="BzD-gf-tzy"/>
+                                        <constraint firstItem="4Hq-zo-AQk" firstAttribute="top" secondItem="xN8-z4-ssm" secondAttribute="topMargin" constant="24" id="IwB-Gv-1wF"/>
+                                        <constraint firstItem="d9I-B2-GUc" firstAttribute="leading" secondItem="4Hq-zo-AQk" secondAttribute="trailing" constant="58" id="NrN-vr-bjS"/>
+                                        <constraint firstItem="d9I-B2-GUc" firstAttribute="top" secondItem="xN8-z4-ssm" secondAttribute="topMargin" constant="26" id="eLW-v5-VPj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="d9I-B2-GUc" secondAttribute="trailing" constant="39" id="lGu-OV-WyO"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="albumImage" destination="Mec-5a-pIF" id="4Pb-cT-PuC"/>
                                     <outlet property="artistLabel" destination="4Hq-zo-AQk" id="7oW-7v-QqG"/>
                                     <outlet property="musicInfo" destination="xN8-z4-ssm" id="LRG-TK-hK8"/>
                                     <segue destination="EhH-wt-B4L" kind="show" identifier="TabPush" id="Bba-7o-ppZ"/>
@@ -133,6 +138,9 @@
             <point key="canvasLocation" x="-759.20000000000005" y="-70.614692653673174"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="altj.jpg" width="600" height="600"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aKj-3F-pUB"/>
     </inferredMetricsTieBreakers>
